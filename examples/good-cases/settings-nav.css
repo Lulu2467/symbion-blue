@@ -1,0 +1,11 @@
+/* 好在哪：悬停和当前页同一块灰。当前页的字保持青色，悬停不会把它盖黑。 */
+html[data-theme="blue"] #setHost .set-nav button[data-set]:hover {
+  background: #f6f7f8;
+  color: #1d1d1f;
+}
+html[data-theme="blue"] #setHost .set-nav button[data-set][aria-current="page"],
+html[data-theme="blue"] #setHost .set-nav button[data-set][aria-current="page"]:hover {
+  background: #f6f7f8;
+  color: #3c7a94;
+  font-weight: 650;
+}

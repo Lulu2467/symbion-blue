@@ -1,0 +1,15 @@
+/* 问题：写在 #teamHost 里面，又用 html 当开头。
+   浏览器把它存成 & html...，选择器对不上。
+   后果：弹层宽变成整栏，圆角和 680px 都不出现。 */
+#teamHost {
+  html[data-theme="blue"] #teamHost .gi-sheet {
+    width: min(680px, 100%);
+  }
+}
+
+/* 正确：嵌套里只写类。 */
+#teamHost {
+  .gi-sheet {
+    width: min(680px, 100%);
+  }
+}

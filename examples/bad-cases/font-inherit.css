@@ -1,0 +1,11 @@
+/* 问题：font: inherit 写在更具体的按钮上，又在字号规则之后。
+   后果：Upload file、Meeting 变成 16px，和旁边 13px 的行不齐。 */
+html[data-theme="blue"] #tail-home .kd-row { font-size: 13px; }
+html[data-theme="blue"] #tail-home button.kd-act { font: inherit; }
+
+/* 正确：inherit 之后把字号写回去。 */
+html[data-theme="blue"] #tail-home button.kd-act {
+  font: inherit;
+  font-size: 13px;
+  font-weight: 400;
+}

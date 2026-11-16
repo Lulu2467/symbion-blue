@@ -1,0 +1,21 @@
+/* 好在哪：胶囊、字在框正中、悬停只换浅底，没有大块青。 */
+html[data-theme="blue"] #dirHost .dir-enter {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  padding: 1px 16px 0;
+  border: 1px solid #c5d4de;
+  border-radius: 999px;
+  background: #fff;
+  color: #3c7a94;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+}
+html[data-theme="blue"] #dirHost .dir-enter:hover {
+  background: #ebf5fa;
+  border-color: #9eb8c6;
+}
